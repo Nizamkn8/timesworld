@@ -2,23 +2,14 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Slider.css";
+import banner1 from "../../../assets/images/banner/banner-img.png";
+import banner2 from "../../../assets/images/banner/banner-img.png";
+import banner3 from "../../../assets/images/banner/banner-img.png";
 
 const slides = [
-  {
-    id: 1,
-    image: "src/assets/images/banner/banner-img.png",
-    text: "Slide 1",
-  },
-  {
-    id: 2,
-    image: "src/assets/images/banner/banner-img.png",
-    text: "Slide 2",
-  },
-  {
-    id: 3,
-    image: "src/assets/images/banner/banner-img.png",
-    text: "Slide 3",
-  },
+  { id: 1, image: banner1, text: "Slide 1" },
+  { id: 2, image: banner2, text: "Slide 2" },
+  { id: 3, image: banner3, text: "Slide 3" },
 ];
 
 const Slider = () => {
