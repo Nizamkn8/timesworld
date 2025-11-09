@@ -22,7 +22,7 @@ const Header = ({ selectedRegion, onFilterChange }) => {
       <Container className="p-0 w-100 max-w-100">
         <Row className="align-items-center justify-content-between bg-white">
           <Col>
-            <h2 className="fw-bold text-dark mb-0 header-title">Countries</h2>
+            <h2 className="fw-bold secondary-clr mb-0 header-title">Countries</h2>
           </Col>
 
           <Col xs="auto">
@@ -45,7 +45,7 @@ const Header = ({ selectedRegion, onFilterChange }) => {
                       <Button
                         key={region}
                         variant="link"
-                        className={`text-decoration-none tab-btn d-block w-100 text-start ${
+                        className={`text-decoration-none tab-btn d-block w-100 text-start secondary-clr ${
                           selectedRegion === region ? "active" : ""
                         }`}
                         onClick={() => {
@@ -66,7 +66,7 @@ const Header = ({ selectedRegion, onFilterChange }) => {
                   <Button
                     key={region}
                     variant="link"
-                    className={`text-decoration-none tab-btn rounded-0 ${
+                    className={`text-decoration-none tab-btn rounded-0 grey-3 ${
                       selectedRegion === region ? "active" : ""
                     }`}
                     onClick={() => onFilterChange(region)}

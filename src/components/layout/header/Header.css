@@ -90,6 +90,16 @@ header {
   right: 0px;
 }
 
+header::after {
+  content: "";
+  width: 20px;
+  height: var(--header-height);
+  position: absolute;
+  right: -20px;
+  top: 0;
+  background: white;
+}
+
 /* animation for fadein */
 @keyframes fadeIn {
   from {
@@ -105,7 +115,7 @@ header {
 /* Active tab */
 .tab-btn.active {
   font-weight: 600;
-  color: #0d6efd !important;
+  color: var(--secondary-clr);
 }
 
 

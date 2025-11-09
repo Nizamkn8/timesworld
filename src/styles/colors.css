@@ -6,6 +6,7 @@
   --font-clr1:#587fff;
   --font-clr2:#cfcfcf;
   --font-clr3:#6f6f6f;
+  --font-clr4:#8b8b8b;
 }
 
 .dark-grey {
@@ -18,6 +19,10 @@
 
 .grey-2 {
   color: var(--secondary-clr);
+}
+
+.grey-3 {
+  color: var(--font-clr4);
 }
 
 /* blue colors */
