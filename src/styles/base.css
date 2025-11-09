@@ -1,0 +1,19 @@
+.custom-container {
+  max-width: 1101px;
+  margin: 0 auto;
+}
+
+.border-grey {
+  border: 2px solid var(--primary-clr);
+}
+
+.btn-hover:hover {
+  background: var(--white);
+  color: var(--primary-clr);
+  border-color: var(--primary-clr);
+}
+
+.btn-1 {
+  --btn-height: 48px;
+  height: var(--btn-height);
+}

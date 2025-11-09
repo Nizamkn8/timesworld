@@ -1,0 +1,31 @@
+:root {
+  --primary-clr: #3e3e3e;
+  --secondary-clr:#3d3d3d;
+
+  /* font colors */
+  --font-clr1:#587fff;
+  --font-clr2:#cfcfcf;
+  --font-clr3:#6f6f6f;
+}
+
+.dark-grey {
+  color: var(--primary-clr);
+}
+
+.secondary-clr {
+  color: var(--secondary-clr);
+}
+
+.grey-2 {
+  color: var(--secondary-clr);
+}
+
+/* blue colors */
+.blue {
+  color: var(--font-clr1);
+}
+
+/* bgs */
+.bg-grey {
+  background: var(--primary-clr);
+}

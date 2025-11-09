@@ -1,0 +1,96 @@
+.login-sec {
+  --sign-in-bot-space: 14px;
+  --login-sec-padding: 80px 40px 80px;
+  --new-user-bot-spacing: 29px;
+  --input-padding: 14px 16px;
+  --input-height: 48px;
+  --checkbox-dimensions: 32px;
+  --checkbox-itme-gap: 16px;
+  --sign-in-with-bot-space: 32px 0;
+  --sign-inwith-hr-line-width: 72px;
+}
+
+.login-form-container {
+  max-width: 946px;
+  margin: 0 auto;
+  display: none;
+}
+
+.mw-280 {
+  max-width: 280px;
+}
+
+.login-section-padding {
+  padding: var(--login-sec-padding);
+}
+
+.sign-in {
+  font-size: 2rem;
+  line-height: 1.3125;
+  margin-bottom: var(--sign-in-bot-space);
+}
+
+.new-user {
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: var(--new-user-bot-spacing);
+  display: block;
+}
+
+.login-input {
+  font-size:  1rem;
+  line-height: 1;
+  padding: var(--input-padding);
+  height: var(--input-height);
+}
+
+.login-checkbox input {
+  border: 2px solid var(--primary-clr);
+  border-radius: 0 !important;
+  width: var(--checkbox-dimensions);
+  height: var(--checkbox-dimensions);
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: var(--checkbox-itme-gap);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.sign-in-with {
+  position: relative;
+  text-align: center;
+  font-size: .8125rem;
+  margin: 0;
+  margin: var(--sign-in-with-bot-space);
+}
+
+.sign-in-with:after {
+  content: "";
+  width: var(--sign-inwith-hr-line-width);
+  height: 2px;
+  background: var(--font-clr2);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.sign-in-with:before {
+  content: "";
+  width: var(--sign-inwith-hr-line-width);
+  height: 2px;
+  background: var(--font-clr2);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .login-form-right {
+    display: none;
+  }
+}

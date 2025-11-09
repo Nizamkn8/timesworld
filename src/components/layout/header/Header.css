@@ -1,0 +1,116 @@
+header {
+  --header-bot-space: 57px;
+  --header-height: 47px;
+  --header-padding: 10px 0;
+  --header-padding-top: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+  height: var(--header-height);
+  padding: var(--header-padding);
+  margin-bottom: var(--header-bot-space);
+  padding-top: var(--header-padding-top);
+}
+
+.max-w-100 {
+  max-width: 100%;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  line-height: 1.4166667;
+  font-weight: 600;
+}
+
+.header-tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.tab-btn {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 4px;
+  border-radius: 0 !important;
+}
+
+.tab-btn:hover {
+  color: #000;
+}
+
+.tab-btn.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+/* Hamburger menu */
+.hamburger {
+  width: 28px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate to hamburger when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 0.5rem;
+  animation: fadeIn 0.3s ease;
+  position: absolute;
+  right: 0px;
+}
+
+/* animation for fadein */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active tab */
+.tab-btn.active {
+  font-weight: 600;
+  color: #0d6efd !important;
+}
+
+
+@media screen and (max-width: 767px) {
+  header {
+    --header-bot-space: 39px;
+  }
+}

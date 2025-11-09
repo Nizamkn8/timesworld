@@ -1,0 +1,47 @@
+.country-card {
+  --card-padding: 17px 18px;
+  --card-gap: 28px;
+  --flag-w: 127px;
+  --flag-h: 96px;
+  box-shadow: 5px 5px 0px #0000001a;
+}
+
+.flag-box {
+  width: var(--flag-w);
+  height: var(--flag-h);
+}
+
+.flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country-card-inner {
+  padding: var(--card-padding);
+  gap: var(--card-gap);
+}
+
+.card-title  {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--secondary-clr);
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.1875;
+  color: var(--font-clr3);
+}
+
+@media screen and (max-width: 767px) {
+  .country-card {
+    --flag-w: 48px;
+    --flag-h: 46px;
+    --card-gap: 16px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}

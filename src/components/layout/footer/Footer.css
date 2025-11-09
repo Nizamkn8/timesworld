@@ -1,0 +1,24 @@
+.site-footer {
+  --footer-spacing: 112px 0 242px;
+  --copy-right-bot-space: 40px;
+  --footer-mail-bot-space: 15px;
+  padding: var(--footer-spacing);
+}
+
+.copy-right {
+  font-size: .8125rem;
+  color: var(--primary-clr);
+  margin-top: var(--copy-right-bot-space);
+}
+
+.footer-mail {
+  margin-bottom: var(--footer-mail-bot-space);
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer {
+    --footer-spacing: 51px 0 220px;
+    --copy-right-bot-space: 27px;
+    --footer-mail-bot-space: 11px;
+  }
+}

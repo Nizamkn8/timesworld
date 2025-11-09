@@ -1,0 +1,148 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1077px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-contents {
+  display: flex;
+  gap: 35px;
+  height: 498px;
+}
+
+.slider-content {
+  width: 100%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-content2 {
+  width: 232px;
+  flex-shrink: 0;
+}
+
+.content-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+/* Fade Animation */
+.slide {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  text-align: center;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Buttons */
+.slider-btn {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  border: none !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: url("../../../assets/images/banner/next-button.png");
+  background-size: contain;
+}
+
+.slider-btn:hover{
+  background-color: transparent;
+}
+
+.slider-btn:active {
+  background-color: transparent !important;
+}
+
+.slider-btn.left {
+  left: 12px;
+}
+
+.slider-btn.right {
+  right: 12px;
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3e3e3e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-contents {
+    flex-direction: column-reverse;
+    gap: 19px;
+    height: fit-content;
+  }
+
+  .slider-content {
+    height: 195px;
+  }
+
+  .slider-content2 {
+    width: 100%;
+    height: 147px;
+  }
+
+  .content-img {
+    width: 74px;
+    height: 69px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+}
+
+.slider-btn {
+  position: absolute;
+  bottom: 14px;
+  transform: translateY(0);
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  padding: 0;
+}
+
+/* Space them evenly on left and right sides of center */
+.slider-btn.left {
+  left: 50%;
+  transform: translateX(-300%) rotate(180deg); /* move left of center */
+}
+
+.slider-btn.right {
+  left: 50%;
+  transform: translateX(200%); /* move right of center */
+}
