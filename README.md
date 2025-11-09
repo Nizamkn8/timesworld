@@ -24,7 +24,7 @@ cd timesworld
 
 npm install
 
-# Run the app locally
+# Run the app locall
 
 npm run dev
 
